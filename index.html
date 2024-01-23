@@ -28,34 +28,47 @@
     <header class="container mx-auto">
         <!-- Start Nav Section  -->
         <nav>
-            <div class="grid grid-cols-3 justify-between items-center py-12">
-                <div>
+            <div class="grid grid-cols-3 justify-between items-center lg:py-12">
+                <div class="hidden md:flex lg:flex">
                     <img src="images/logo2.png" alt="">
                 </div>
-                <div class="flex justify-center gap-10 text-nowrap text-lg">
+                <div class="hidden lg:flex justify-center gap-10 text-nowrap text-lg">
                     <a href="">Home <i class="fa-solid fa-angle-right"></i></a>
                     <a href="">Services <i class="fa-solid fa-angle-right"></i></a>
                     <a href="">Cases <i class="fa-solid fa-angle-right"></i></a>
                     <a href="">Blog <i class="fa-solid fa-angle-right"></i></a>
                     <a href="">Contact Us <i class="fa-solid fa-angle-right"></i></a>
                 </div>
-                <div class="flex justify-end">
+                <div class="hidden lg:flex justify-end">
                     <button class="btn bg-[#B68C5A] text-white text-lg ">Free Consultation</button>
                 </div>
+                
             </div>
+            <!-- mobile view navber -->
+            <div class="px- md:hidden lg:hidden flex justify-between items-center p-6">
+                <div class="">
+                    <img src="images/logo2.png" alt="">
+                </div>
+                <div class="sm:flex md:hidden lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                </div>
+            </div>
+            <!-- mobile view navber -->
         </nav>
         <!-- Start Nav Section  -->
         <!-- Start Bannar Section  -->
         <section>
             <div
-                class="rounded-8 bg-[linear-gradient(45deg,rgba(17,17,17,0),rgba(17,17,17,0.00)),url(images/banner.png)] bg-no-repeat bg-cover h-[700px]">
+                class="rounded-2xl lg:rounded-lg bg-[linear-gradient(180deg,rgba(17,17,17,0),rgba(17,17,17,0.00)),url('./images/banner.png')] bg-no-repeat bg-cover h-[700px] mx-6">
                 <div
                     class="w-2/3 mx-auto flex flex-col space-y-6 justify-center items-center text-white text-center py-52">
-                    <h1 class="lg:text-7xl text-5xl">We Provide Effective <br> Legal Solutions</h1>
+                    <h1 class="lg:text-7xl text-4xl">We Provide Effective <br> Legal Solutions</h1>
                     <p class="text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the
                         majority <br> have suffered alteration in some form, by injected humour.</p>
                     <div class="flex flex-row gap-6">
-                        <input class="bg-[#FFF] w-[370px] rounded-lg pl-3" type="search" name="" id=""
+                        <input class="bg-[#FFF] lg:w-[370px] rounded-lg pl-3" type="search" name="" id=""
                             placeholder="Search your services">
                         <button class="btn bg-[#B68C5A] text-white text-lg border-none">Search</button>
                     </div>
@@ -66,14 +79,14 @@
     </header>
     <main class="container mx-auto">
         <!-- Practice area section  -->
-        <section class="my-24">
+        <section class="my-24 px-6">
             <div class="text-center space-y-4">
                 <h2 class="font-extrabold text-4xl">The Legal Practice Area</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered
                     alteration in some form, by injected humour.</p>
             </div>
             <!-- start card section  -->
-            <div class="grid grid-cols-3 my-20">
+            <div class="grid grid-cols-1 lg:grid-cols-3 my-20">
                 <!-- card 1 -->
                 <div class="border-r-2 border-b-2 flex flex-col justify-center items-center space-y-6 p-8">
                     <div><img src="images/business.png" alt=""></div>
@@ -164,9 +177,9 @@
         </section>
         <!-- Practice area section  -->
         <!-- Client section  -->
-        <section class="my-24">
+        <section class="my-24 px-6">
             <div class="text-center space-y-2 mb-20">
-                <h1 class="text-4xl font-extrabold">What Our Client Say</h1>
+                <h1 class="lg:text-4xl text-3xl font-extrabold">What Our Client Say</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered
                     alteration in some form, by injected humour.</p>
             </div>
@@ -176,12 +189,12 @@
                 <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="bg-[url(images/banner.png)] bg-no-repeat bg-cover h-[700px] w-full">
-                        <div class="flex flex-col justify-center items-center pt-48">
+                        <div class="flex flex-col justify-center items-center pt-48 bg-[rgba(17,17,17,0.80)]">
                             <div><img src="images/Ellipse 1.png" alt=""></div>
                             <div class="text-white text-center">
                                 <h4 class="text-2xl font-extrabold pb-2">Awlad Hossain</h4>
                                 <p class="font-bold pb-10">UIX Designer</p>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                <p class="text-xs px-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
                                     piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.
                                     Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia,
                                     looked
@@ -220,14 +233,14 @@
         </section>
         <!-- Client section  -->
         <!-- FAQ Section  -->
-        <section class="my-14">
+        <section class="my-14 px-6">
             <div class="text-center">
                 <h1 class="text-4xl pb-6 font-extrabold">Frequently Asked Any Questions</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered
                     alteration in some form, by injected humour.</p>
             </div>
             <!-- Faq items  -->
-            <div class="mt-24 flex gap-10 justify-between">
+            <div class="mt-24 flex lg:flex-row flex-col gap-10 justify-between">
                 <div class="flex-1">
                     <div class="collapse collapse-plus bg-base-200 mb-6">
                         <input type="radio" name="my-accordion-3" checked="checked" />
@@ -277,41 +290,41 @@
         </section>
         <!-- FAQ Section  -->
         <!-- Contact With Us -->
-        <section class="my-24">
+        <section class="my-24 px-6">
             <div class="text-center mb-6">
                 <h2 class="text-4xl font-extrabold pb-4">Contact With Us</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered
                     alteration in some form, by injected humour.</p>
             </div>
             <!-- contact itmes  -->
-            <div class="flex gap-10 justify-center items-center mt-20">
+            <div class="flex lg:flex-row flex-col gap-10 justify-center items-center mt-20">
                 <div class="grid grid-cols-2 flex-1">
-                    <div class="space-y-2 bg-[#F3F3F3] p-16 border-b-2 border-r-2 text-center">
+                    <div class="space-y-2 bg-[#F3F3F3] lg:p-16 p-8 border-b-2 border-r-2 text-center">
                         <div class="flex justify-center"><img src="images/location.png" alt=""></div>
                         <h4>Address</h4>
                         <p class="text-[#707070]">A108 Adam Street,<br>
                             New York, NY 535022</p>
                     </div>
-                    <div class="space-y-2 bg-[#F3F3F3] p-16 border-b-2 text-center">
+                    <div class="space-y-2 bg-[#F3F3F3] lg:p-16 p-8 border-b-2 text-center">
                         <div class="flex justify-center"><img src="images/call.png" alt=""></div>
                         <h4>Call Us</h4>
                         <p class="text-[#707070]">+88 017500000000<br>
                             +88 017500000000</p>
                     </div>
-                    <div class="space-y-2 bg-[#F3F3F3] p-16 border-r-2 text-center">
+                    <div class="space-y-2 bg-[#F3F3F3] lg:p-16 p-8 border-r-2 text-center">
                         <div class="flex justify-center"><img src="images/email.png" alt=""></div>
                         <h4>Email Us</h4>
                         <p class="text-[#707070]">info@gmail.com <br>
                             info@gmail.com</p>
                     </div>
-                    <div class="space-y-2 bg-[#F3F3F3] p-16 text-center">
+                    <div class="space-y-2 bg-[#F3F3F3] lg:p-16 p-8 text-center">
                         <div class="flex justify-center"><img src="images/time.png" alt=""></div>
                         <h4>Working Hours</h4>
                         <p class="text-[#707070]">Mon-Fri: 9AM to 5PM <br>
                             Sunday: 9AM to 1 PM</p>
                     </div>
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 w-full ">
                     <div class="flex flex-col w-full space-y-4">
                         <input type="text" name="" id="" class="p-4 bg-[#F3F3F3] rounded-lg" placeholder="Your Name">
                         <input type="email" class="p-4 bg-[#F3F3F3] rounded-lg" name="" id="" placeholder="Your Email">
@@ -326,8 +339,8 @@
         <!-- Contact With Us -->
     </main>
     <!-- start footer section -->
-    <footer class="footer p-20 bg-black text-white text-base-content ">
-        <div class="container mx-auto grid grid-cols-4">
+    <footer class="footer p-8 lg:p-20 bg-black text-white text-base-content ">
+        <div class="container mx-auto grid lg:grid-cols-4 grid-cols-1">
             <div>
                 <nav>
                     <header class="footer-title">
@@ -345,7 +358,7 @@
             <div>
                 <nav>
                     <header class="footer-title">Usefull Link</header>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 lg:flex-row flex-col">
                         <a class="link link-hover">Homes</a>
                         <a class="link link-hover">About Us</a>
                         <a class="link link-hover">Cases</a>
@@ -368,15 +381,15 @@
                 </nav>
             </div>
             <div>
-                <form>
+                <form class="">
                     <header class="footer-title">Subscribe</header>
-                    <fieldset class="form-control w-80">
+                    <fieldset class="form-control">
                         <label class="label">
                             <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
                         </label>
-                        <div class="join">
-                            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-                            <button class="btn btn-primary join-item">Subscribe</button>
+                        <div class="join sm:flex flex-col w-full pr-2">
+                            <input type="text" placeholder="username@site.com" class="input input-bordered rounded-lg"/>
+                            <button class="btn btn-primary mt-3">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>
